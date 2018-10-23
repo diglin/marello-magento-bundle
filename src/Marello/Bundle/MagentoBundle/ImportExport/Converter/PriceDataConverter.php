@@ -32,7 +32,7 @@ class PriceDataConverter extends ProductDataConverter
             }
         }
         $result = [
-            'productId'         => $exportedRecord["product"]['product_id'],
+            'productId'         => $this->getProductOrigin($exportedRecord['product']['sku']),
             'productData'       => [
                 'price'         => $price,
                 'special_price' => $specialPrice,

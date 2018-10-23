@@ -42,6 +42,7 @@ class PriceNormalizer extends ConfigurableEntityNormalizer
         }
 
         $result['product']['product_id'] = $object->getProduct()->getId();
+        $result['product']['sku'] = $object->getProduct()->getSku();
         $result['integration_channel_id'] = $context['channel'];
 
         return $result;
