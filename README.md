@@ -22,7 +22,7 @@ Marello integration with Magento is documented by the ORO team using OROCRM, the
 * Similar integration between Magento and ORO can be found on this [link](https://oroinc.com/orocrm/doc/2.0/admin-guide/integrations/magento-channel-integration)
 
 ### Requirements
-Marello Magento Bridge requires Marello CE 1.4.* or Marello EE 1.1.* and Magento 1.9.* installed in order to function correctly.
+Marello Magento Bridge requires Marello CE 1.5.* or Marello EE 1.1.* and Magento 1.9.* installed in order to function correctly.
 
 ### USAGE
 
