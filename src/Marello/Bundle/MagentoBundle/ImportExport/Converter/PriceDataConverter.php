@@ -22,9 +22,8 @@ class PriceDataConverter extends ProductDataConverter
             /**
              * multiple websites would not set price on website level
              */
-            $originIds = $this->getWebsiteIds();
-            if (count($originIds) <= 1) {
-                $mageWebsiteId = $this->getIntegrationChannel()->getTransport()->getWebsiteId();
+            $mageWebsiteId = $this->getIntegrationChannel()->getTransport()->getWebsiteId();
+            if ($mageWebsiteId == '-1') {
                 $storeObj = $this->getMagentoStore($mageWebsiteId);
                 if ($storeObj) {
                     $store = $storeObj->getCode();
