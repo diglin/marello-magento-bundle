@@ -123,15 +123,12 @@ class ProductDataConverter extends IntegrationAwareDataConverter
         $websiteId = $transport->getWebsiteId();
         $websiteIds = [];
         switch ($websiteId) {
-            case -1:
+            default:
                 foreach ($transport->getWebsites() as $website) {
                     if ($website['id'] >= 1) {
                         $websiteIds[] = $website['id'];
                     }
                 }
-                break;
-            default:
-                $websiteIds[] = $websiteId;
                 break;
         }
         return $websiteIds;
