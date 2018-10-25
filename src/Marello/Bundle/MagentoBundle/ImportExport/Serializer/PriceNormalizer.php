@@ -55,6 +55,7 @@ class PriceNormalizer extends ConfigurableEntityNormalizer
      */
     private function getPriceData($price, $priceType = self::DEFAULT_PRICE)
     {
+        $value = 0.0000;
         switch ($priceType) {
             case $priceType == self::MSRP_PRICE && $price instanceof AssembledPriceList:
                 if ($price->getMsrpPrice()) {
