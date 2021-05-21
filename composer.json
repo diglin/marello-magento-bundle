@@ -15,8 +15,8 @@
         "exclude-from-classmap": ["/Tests/"]
     },
     "require": {
-        "php": ">=7.1",
-        "marellocommerce/marello": "1.5.*"
+        "php": ">=7.3",
+        "marellocommerce/marello": "3.*"
     },
     "repositories": {
         "oro": {
